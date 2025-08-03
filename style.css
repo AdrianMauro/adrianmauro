@@ -1,52 +1,20 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #0d0d0d;
-  color: #f0f0f0;
-  margin: 0;
-}
-.hero {
-  background: #000;
-  padding: 100px 20px;
-  text-align: center;
-}
-.logo {
-  font-size: 3rem;
-  color: #f5c518;
-}
-.tagline {
-  font-size: 1.2rem;
-  color: #f5c518;
-}
-.navbar {
-  background: #111;
-  text-align: center;
-  padding: 15px;
-}
-.navbar a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-}
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-h2 {
-  color: #f5c518;
-}
-form input, form textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-button {
-  background: #f5c518;
-  color: black;
-  font-weight: bold;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
+body {margin: 0; font-family: 'Montserrat', sans-serif; background: #0d0d0d; color: #f0f0f0; line-height: 1.6;}
+.hero {background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/hero-bg.jpg') no-repeat center center/cover; height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center;}
+.logo { font-size: 3rem; font-weight: 600; color: #f5c518; } .tagline { font-size: 1.2rem; margin-top: 10px; }
+.navbar { background: rgba(0, 0, 0, 0.9); text-align: center; padding: 15px; position: sticky; top: 0; }
+.navbar a { color: #fff; margin: 0 20px; text-decoration: none; font-size: 1.1rem; transition: color 0.3s; } .navbar a:hover { color: #f5c518; }
+section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+h2 { border-bottom: 2px solid #f5c518; padding-bottom: 10px; margin-bottom: 30px; color: #f5c518; }
+form { display: flex; flex-direction: column; } label { margin: 10px 0 5px; } input, textarea { padding: 10px; margin-bottom: 15px; border: none; border-radius: 5px; }
+button { padding: 10px; background: #f5c518; border: none; cursor: pointer; font-size: 1.1rem; font-weight: 600; } button:hover { background: #c3a312; }
+footer { background: #111; color: #aaa; text-align: center; padding: 20px; }
+.insta-link { color: #f5c518; text-decoration: none; font-size: 1.2rem; }
+.fade-in { opacity: 0; transform: translateY(20px); transition: all 1s ease-out; } .fade-in.show { opacity: 1; transform: translateY(0); }
+/* Cards */ .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.role-card { position: relative; overflow: hidden; border-radius: 8px; } .role-card img { width: 100%; height: auto; display: block; transition: transform 0.3s ease; }
+.role-card:hover img { transform: scale(1.05); } .caption { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: #f5c518; text-align: center; padding: 10px; opacity: 0; transition: opacity 0.3s; }
+.role-card:hover .caption { opacity: 1; }
+/* Gallery */ .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.gallery-grid img { width: 100%; height: auto; border-radius: 5px; cursor: pointer; transition: transform 0.3s; } .gallery-grid img:hover { transform: scale(1.05); }
+/* Video container */ .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
