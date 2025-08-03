@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #f0f0f0;
+  margin: 0;
+}
+.hero {
+  background: #000;
+  padding: 100px 20px;
+  text-align: center;
+}
+.logo {
+  font-size: 3rem;
+  color: #f5c518;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: #f5c518;
+}
+.navbar {
+  background: #111;
+  text-align: center;
+  padding: 15px;
+}
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  color: #f5c518;
+}
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+button {
+  background: #f5c518;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
